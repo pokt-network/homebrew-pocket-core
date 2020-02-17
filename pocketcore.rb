@@ -20,6 +20,6 @@ class Pocketcore < Formula
   end
 
   test do
-    shell_output("#{bin}/pocketcore", "start")
+    shell_output("#{bin}/pocket-core", "start")
   end
 end
