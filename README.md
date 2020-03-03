@@ -33,7 +33,7 @@ brew install pokt-network/pocket-core/pocketcore
 And to start pocket core you can simply run:
 
 ```
-pocket-core start
+pocket start
 ```
 
 If everything works, a terminal prompt asking for a coinbase passphrase should appear.
