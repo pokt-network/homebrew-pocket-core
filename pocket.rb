@@ -1,9 +1,10 @@
 class Pocket < Formula
   desc "Official implementation of the Pocket Network Protocol"
   homepage "https://www.pokt.network"
-  url "https://github.com/pokt-network/pocket-core/archive/RC-0.2.2.tar.gz"
-  sha256 "813940371da1dbfb7ae28801a3a5c350230a6e809c83823e12f12e494e13f097"
+  url "https://github.com/pokt-network/pocket-core/archive/RC-0.2.3.tar.gz"
+  sha256 "1b2c0038ee9bf3a4e794cb5f2f0642c68c6f61a00f9f4f9dc354c35f5bb6ec5e"
   depends_on "go" => :build
+  depends_on "leveldb" => :build
 
   def install
     ENV["GOPATH"] = buildpath
@@ -15,7 +16,7 @@ class Pocket < Formula
       # Install the compiled binary into Homebrew's `bin` - a pre-existing
       # global variable
       system "go", "mod", "vendor"
-      system "go", "build", "-o", bin/"pocket", "./app/cmd/pocket_core/main.go"
+      system "go", "build", "-tags", "cleveldb", "-o", bin/"pocket", "./app/cmd/pocket_core/main.go"
     end
   end
 
