@@ -1,8 +1,8 @@
 class Pocket < Formula
   desc "Official implementation of the Pocket Network Protocol"
   homepage "https://www.pokt.network"
-  url "https://github.com/pokt-network/pocket-core/archive/RC-0.2.4.tar.gz"
-  sha256 "d5b0e2e877870e7901eb1af49cb4be9bb44fc79229f36a5623d4eafd63deb708"
+  url "https://github.com/pokt-network/pocket-core/archive/RC-0.3.0.tar.gz"
+  sha256 "fd33ffab6995937b39cf3899578d4feb4079091b905717db9047fb27f36573e1"
   depends_on "go" => :build
   depends_on "leveldb" => :build
 
