@@ -27,7 +27,7 @@ To install Pocket-Core using brew just run those commands on the terminal of you
 
 ```
 brew tap pokt-network/pocket-core
-brew install pokt-network/pocket-core/pocket
+brew install pocket
 ```
 
 And to start pocket core you can simply run:
