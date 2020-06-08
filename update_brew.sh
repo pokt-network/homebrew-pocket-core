@@ -4,13 +4,13 @@ set -e
 
 #Verify that the pocket version is correctly sent
 if [ $# -eq 0 ]; then
-    echo "Example usage: ./update_brew.sh 0.4.0"
+    echo "Example usage: ./update_brew.sh RC-0.4.0"
     exit 1
 fi
 
 #Declare variables
 POCKET_VERSION=$1
-URL=https://github.com/pokt-network/pocket-core/archive/RC-$POCKET_VERSION.tar.gz
+URL=https://github.com/pokt-network/pocket-core/archive/$POCKET_VERSION.tar.gz
 
 #Verify formula file truly exist
 if [ -f pocket.rb ]; then
