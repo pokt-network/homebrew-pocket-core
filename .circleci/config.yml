@@ -13,13 +13,13 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - ""
-      - run: apk add curl perl-utils 
+            - "$SSH_FINGERPRINT"
+      - run: apk add curl perl-utils git
       - run: sh update_brew.sh << pipeline.parameters.branch-name >>
       - run:
           name: Commit to GitHub
           command: |
-            git config user.email "<insert-the-email-you-use-with-github>"
+            git config user.email "$GH_EMAIL"
             git config user.name "CircleCI Job"
             git checkout circleci-project-setup
             git commit --allow-empty -am "Automatic commit from CircleCI [skip ci]"
