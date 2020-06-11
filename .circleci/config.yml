@@ -14,6 +14,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - ""
+      - run: apk add curl shasum 
       - run: sh update_brew.sh << pipeline.parameters.branch-name >>
       - run:
           name: Commit to GitHub
