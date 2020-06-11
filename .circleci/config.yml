@@ -14,7 +14,7 @@ jobs:
       - add_ssh_keys:
           fingerprints:
             - "$SSH_FINGERPRINT"
-      - run: apk add curl perl-utils git
+      - run: apk add curl perl-utils git openssh-client
       - run: sh update_brew.sh << pipeline.parameters.branch-name >>
       - run:
           name: Commit to GitHub
