@@ -13,7 +13,7 @@ jobs:
       - checkout
       - add_ssh_keys:
           fingerprints:
-            - "$SSH_FINGERPRINT"
+            - "af:b8:17:1b:fd:26:99:74:5c:01:da:99:6c:b5:a9:ef"
       - run: apk add curl perl-utils git openssh-client
       - run: sh update_brew.sh << pipeline.parameters.branch-name >>
       - run:
