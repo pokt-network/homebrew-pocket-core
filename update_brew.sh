@@ -17,6 +17,14 @@ if [ -f pocket.rb ]; then
     #Download and get the shasum256 value
     echo "Downloading pocket.tar.gz version $POCKET_VERSION"
     curl $URL -sL -o pocket.tar.gz
+
+    #Verify if tag exists
+
+    if (( $(wc -l <"pocket.tar.gz") < 10 )); then
+        echo "Version $POCKET_VERSION not found"
+        exit 1
+    fi
+
     # Get the shasum 256 value of the pocket.tar.gz file
     echo "Calculating pocket.tar.gz file sha256 value"
     SHA_VALUE=$(shasum -a 256 pocket.tar.gz | awk -F' ' '{print $1}')
@@ -31,7 +39,7 @@ if [ -f pocket.rb ]; then
 
     #Clean the directory
     echo "Cleaning directory..."
-    rm pocket.tar.gz trash.tst 
+    # rm pocket.tar.gz trash.tst 
     echo "Done!"
 else 
     echo "pocket.rb not found. Please verify the script is running in homebrew-pocket-core root folder"
