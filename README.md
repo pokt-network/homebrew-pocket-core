@@ -12,12 +12,13 @@ You should have brew install.
 
 To install Homebrew on Mac:
 
-```
+```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 To install Homebrew on Linux:
-```
+
+```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
 ```
 
