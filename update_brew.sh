@@ -4,7 +4,7 @@ set -e
 
 #Verify that the pocket version is correctly sent
 if [ $# -eq 0 ]; then
-    echo "Example usage: ./update_brew.sh RC-0.4.0"
+    echo "Example usage: ./update_brew.sh RC-0.11.1"
     exit 1
 fi
 

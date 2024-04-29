@@ -1,19 +1,19 @@
 # Homebrew Pocket-Core
 
-Repository dedicated to host the formula to install the Pocket Core binary using brew.
+Repository dedicated to host the formula to install the Pocket-Core binary using Homebrew.
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Remember to always read the documentation available on [Pocket Documentation](https://docs.pokt.network/docs).
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Remember to always read the documentation available in the [Pocket Documentation](https://docs.pokt.network/docs).
 
 ### Prerequisites
 
-You should have brew install.
+You need to have the package manager Homebrew installed.
 
 To install Homebrew on Mac:
 
-```bash
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+```zsh
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 To install Homebrew on Linux:
@@ -24,16 +24,16 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/i
 
 ### Installing
 
-To install Pocket-Core using brew just run those commands on the terminal of your system:
+To install Pocket-Core using Homebrew just run the following commands on the terminal of your system:
 
-```
-brew tap pokt-network/pocket-core
+```bash
+brew tap pokt-network/pocket-core && \
 brew install pocket
 ```
 
-And to start pocket core you can simply run:
+And to start Pocket-Core you can simply run:
 
-```
+```bash
 pocket start
 ```
 
