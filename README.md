@@ -10,13 +10,13 @@ These instructions will get you a copy of the project up and running on your loc
 
 You need to have the package manager Homebrew installed.
 
-To install Homebrew on Mac:
+To install Homebrew on Mac, run the following command in a terminal:
 
 ```zsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-To install Homebrew on Linux:
+To install Homebrew on Linux (Linuxbrew), run the following command in a terminal:
 
 ```bash
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
@@ -24,7 +24,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/i
 
 ### Installing
 
-To install Pocket-Core using Homebrew just run the following commands on the terminal of your system:
+To install Pocket-Core using Homebrew just run the following commands in a terminal on your system:
 
 ```bash
 brew tap pokt-network/pocket-core && \
