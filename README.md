@@ -13,7 +13,7 @@ You need to have the package manager Homebrew installed.
 To install Homebrew on Mac, run the following command in a terminal:
 
 ```zsh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+sudo /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 To install Homebrew on Linux (Linuxbrew), run the following command in a terminal:
