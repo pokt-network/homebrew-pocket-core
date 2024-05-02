@@ -10,16 +10,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 You need to have the package manager Homebrew installed.
 
-To install Homebrew on Mac, run the following command in a terminal:
-
-```zsh
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
-To install Homebrew on Linux (Linuxbrew), run the following command in a terminal:
+To install Homebrew on Mac or Linux, run the following command in a terminal:
 
 ```bash
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ### Installing
@@ -37,4 +31,4 @@ And to start Pocket-Core you can simply run:
 pocket start
 ```
 
-If everything works, a terminal prompt asking for a coinbase passphrase should appear.
+If everything works, a terminal prompt asking for a keybase passphrase, should appear.
