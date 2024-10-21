@@ -13,10 +13,10 @@ class Pocket < Formula
     # to $GOPATH/src/github.com/pokt-network/pocket-core
     bin_path.install Dir["*"]
     cd bin_path do
-      # Install the compiled binary into Homebrew's `bin` - a pre-existing
-      # global variable
+      # Install the compiled binary into Homebrew's `bin` - a pre-existing global variable
       system "go", "mod", "vendor"
-      system "go", "build", "-tags", "cleveldb", "-o", bin/"pocket", "./app/cmd/pocket_core/main.go"
+      # system "go", "build", "-tags", "cleveldb", "-o", bin/"pocket", "./app/cmd/pocket_core/main.go"
+      system "go", "build", "-o", bin/"pocket", "./app/cmd/pocket_core/main.go"
     end
   end
 
