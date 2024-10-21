@@ -47,8 +47,10 @@ If everything works, a terminal prompt asking for a coinbase passphrase should a
 
 ### Update Formula
 
-To update the formula, simply run the following commands:
+To update the formula, simply run the following command with the new version of the binary:
+
+For example, to update to version RC-0.12.0:
 
 ```bash
-./update_brew.sh
+./update_brew.sh RC-0.12.0
 ```
