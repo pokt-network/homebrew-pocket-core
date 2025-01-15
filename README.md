@@ -4,13 +4,8 @@ Repository dedicated to host the formula to install the Pocket-Core binary using
 
 ## Getting Started
 
-<<<<<<< HEAD
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. Remember to always read the documentation available in the [Pocket Documentation](https://docs.pokt.network/docs).
-=======
 These instructions will get you a copy of the project up and running on your local
 machine.
-
-> > > > > > > 5ea4281 (Update docs)
 
 Remember to always read the documentation available on [Pocket Documentation](https://docs.pokt.network/docs).
 
